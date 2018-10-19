@@ -1,6 +1,7 @@
 import React, { Component } from 'react'
 import './Header.css';
 import { Navbar, Nav } from 'react-bootstrap';
+import { Link } from 'react-router-dom';
 
 class Header extends Component {
     componentWillMount() {
@@ -29,10 +30,10 @@ class Header extends Component {
                     
                     <Navbar.Collapse id="responsive-navbar-nav">
                         <Nav id="nav" className="ml-auto">
-                            <Nav.Link href="/">Inicio</Nav.Link>
-                            <Nav.Link href="/pages/projects">Proyectos</Nav.Link>
-                            <Nav.Link href="/pages/blog">Blog</Nav.Link>
-                            <Nav.Link href="/pages/contact">Contacto</Nav.Link>
+                            <Link className="nav-link" to="/">Inicio</Link>
+                            <Link className="nav-link" to="/pages/projects">Proyectos</Link>
+                            <Link className="nav-link" to="/pages/blog">Blog</Link>
+                            <Link className="nav-link" to="/pages/contact">Contacto</Link>
                         </Nav>
                     </Navbar.Collapse>
                 </Navbar>
