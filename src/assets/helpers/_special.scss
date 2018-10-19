@@ -1,0 +1,28 @@
+.fullheight::before {
+    color: silver;
+    font-size: 3vw;
+    content: "Sitio en construcción";
+}
+.fullheight {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    min-height: 100vw;
+    align-items: center;
+    h1 {
+        @extend .display-4;
+
+        letter-spacing: 5px;
+    }
+    section {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        div:before {
+            display: block;
+            content: "OLAAA";
+            color: red;
+            font-size: 4vw;
+        }
+    }
+}

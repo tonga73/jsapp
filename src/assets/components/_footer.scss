@@ -1,0 +1,32 @@
+
+.footer {
+    width: 100%;
+    padding: 3em 0 5em 0;
+    ul.nav {
+      display: flex;
+      justify-content: space-around;
+      width: 100%;
+      li {
+        width: 17%;
+        height: 100%;
+        text-align: center;
+        margin: 0;
+        padding-top: 20px;
+        border-top: 3px solid transparent;
+        border-radius: 0 0 9px 9px;
+        a {
+          display: block;
+          text-decoration: none;
+          svg {
+            color: rgba(34, 34, 34, 0.8);
+            font-size: 5vw;
+          }
+          &:hover {
+            svg {
+              color: rgb(34, 34, 34);
+            }
+          }
+        }
+      }
+    }
+  }

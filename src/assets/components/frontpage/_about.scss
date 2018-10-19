@@ -1,0 +1,42 @@
+
+.about-front-article {
+    display: flex;
+    .about-front-text {
+      padding: 1.5em 1em 0 1em;
+      letter-spacing: 2.3px;
+      width: 50%;
+      font-size: 2.3vw;
+      color: Teal;
+      font-style: italic;
+    }
+    span.about-front-img {
+      width: 50%;
+      min-height: 100%;
+      display: block;
+      background-image: url('https://www.sitprevencio.cat/wp-content/uploads/2018/04/construccion.jpg');
+      background-repeat: no-repeat;
+      background-position: center center;
+      background-size: 90% 65%;
+    }
+  }
+  .about-front-btn {
+    display: block;
+    margin: 0 auto;
+    position: relative;
+    border: 0;
+    border-top: 5px;
+    border-style: solid;
+    border-color: white;
+    font-size: 2.5em;
+    background-color: cadetblue;
+    padding: 15px 17px;
+    z-index: 99999;
+    a {
+      color: snow;
+      text-decoration: none;
+    }
+    &:hover {
+      background-color: Teal;
+      border-color: rgba(34, 34, 34, 0.7);
+    }
+  }

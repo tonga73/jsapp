@@ -1,0 +1,19 @@
+// Bootstrap library
+@import 'bootstrap/scss/_functions.scss';
+
+// My Bootstrap configuration (Custom Bootstrap Variables, Custom Fonts)
+@import './helpers/_custom_bootstrap';
+@import './helpers/special';
+
+// Bootstrap library
+@import 'bootstrap/scss/bootstrap.scss';
+
+// Custom General Components
+@import './components/header';
+@import './components/footer';
+// Pages Components
+@import './components/frontpage/services';
+@import './components/frontpage/carousel';
+@import './components/frontpage/about';
+
+

@@ -1,0 +1,12 @@
+#carousel-front {
+    .carousel-inner {
+        overflow: hidden;
+        align-items: center;
+        max-height: 630px;
+        carousel-item {
+            img {
+                height: 100%;
+            }
+        }
+    }
+}
