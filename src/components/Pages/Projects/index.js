@@ -7,8 +7,6 @@ import { library } from '@fortawesome/fontawesome-svg-core';
 import { faFacebook, faTwitter, faInstagram } from '@fortawesome/free-brands-svg-icons';
 import { faEnvelope } from '@fortawesome/free-solid-svg-icons';
 
-import axios from 'axios';
-
 library.add(faFacebook, faTwitter, faInstagram, faEnvelope)
 
 export default class Projects extends Component {

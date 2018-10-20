@@ -39,13 +39,13 @@ export default class Example extends React.Component {
             <Modal.Body>
               <Carousel>
                   <Carousel.Item>
-                      <img src="https://images.pexels.com/photos/34950/pexels-photo.jpg?auto=compress&cs=tinysrgb&h=350" />
+                      <img alt="Random Alternative Text" src="https://images.pexels.com/photos/34950/pexels-photo.jpg?auto=compress&cs=tinysrgb&h=350" />
                   </Carousel.Item>
                   <Carousel.Item>
-                      <img src="https://images.pexels.com/photos/34950/pexels-photo.jpg?auto=compress&cs=tinysrgb&h=350" />
+                      <img alt="Random Alternative Text" src="https://images.pexels.com/photos/34950/pexels-photo.jpg?auto=compress&cs=tinysrgb&h=350" />
                   </Carousel.Item>
                   <Carousel.Item>
-                      <img src="https://images.pexels.com/photos/34950/pexels-photo.jpg?auto=compress&cs=tinysrgb&h=350" />
+                      <img alt="Random Alternative Text" src="https://images.pexels.com/photos/34950/pexels-photo.jpg?auto=compress&cs=tinysrgb&h=350" />
                   </Carousel.Item>
               </Carousel>
             </Modal.Body>
