@@ -1,10 +1,19 @@
 @charset "UTF-8";
+@import url(~animate.css/animate.min.css);
 @import url("https://fonts.googleapis.com/css?family=Exo");
 @import url("https://fonts.googleapis.com/css?family=Josefin+Sans");
+@import url(./components/pages/all.css);
 .fullheight::before {
   color: silver;
   font-size: 3vw;
-  content: "Sitio en construcción"; }
+  content: "\f126";
+  font-family: FontAwesome;
+  font-style: normal;
+  font-weight: normal;
+  text-decoration: inherit; }
+
+.fullheight::after {
+  content: '| sección actualmente bajo desarrollo o mantenimiento |'; }
 
 .fullheight {
   display: flex;
@@ -23,6 +32,157 @@
       content: "OLAAA";
       color: red;
       font-size: 4vw; }
+
+.hovereffect {
+  width: 100%;
+  height: 100%;
+  float: left;
+  overflow: hidden;
+  position: relative;
+  text-align: center;
+  cursor: default; }
+
+.hovereffect .overlay {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  overflow: hidden;
+  top: 0;
+  left: 0; }
+
+.hovereffect img {
+  display: block;
+  position: relative; }
+
+.hovereffect h2 {
+  text-transform: uppercase;
+  color: #fff;
+  text-align: center;
+  font-size: 17px;
+  padding: 10px; }
+
+.hovereffect:hover h2 {
+  opacity: 0;
+  filter: alpha(opacity=0);
+  -webkit-transform: translate3d(-50%, -50%, 0) scale3d(0.8, 0.8, 1);
+  transform: translate3d(-50%, -50%, 0) scale3d(0.8, 0.8, 1); }
+
+.hovereffect a.info {
+  display: inline-block;
+  text-decoration: none;
+  padding: 7px 14px;
+  text-transform: uppercase;
+  color: #fff;
+  border: 1px solid #fff;
+  margin: 50px 0 0 0;
+  background-color: transparent; }
+
+.hovereffect a.info:hover {
+  box-shadow: 0 0 5px #fff; }
+
+.hovereffect hr {
+  width: 40%;
+  opacity: 0;
+  filter: alpha(opacity=0);
+  border: 1px solid #FFF; }
+
+.hovereffect hr:nth-child(3) {
+  -webkit-transform: translate3d(-50%, -50%, 0) rotate3d(0, 0, 1, 90deg) scale3d(0, 0, 1);
+  transform: translate3d(-50%, -50%, 0) rotate3d(0, 0, 1, 90deg) scale3d(0, 0, 1); }
+
+.hovereffect hr:nth-child(4) {
+  -webkit-transform: translate3d(-50%, -50%, 0) rotate3d(0, 0, 1, 180deg) scale3d(0, 0, 1);
+  transform: translate3d(-50%, -50%, 0) rotate3d(0, 0, 1, 180deg) scale3d(0, 0, 1); }
+
+.hovereffect h2, .hovereffect hr {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
+  transition: opacity 0.35s, transform 0.35s;
+  -webkit-transform: translate3d(-50%, -50%, 0);
+  transform: translate3d(-50%, -50%, 0);
+  -webkit-transform-origin: 50%;
+  -ms-transform-origin: 50%;
+  transform-origin: 50%;
+  background-color: transparent;
+  margin: 0px; }
+
+.set1, .set2 {
+  left: 50%;
+  position: absolute;
+  -webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
+  transition: opacity 0.35s, transform 0.35s;
+  -webkit-transform: translate3d(-50%, -50%, 0);
+  transform: translate3d(-50%, -50%, 0);
+  -webkit-transform-origin: 50%;
+  -ms-transform-origin: 50%;
+  transform-origin: 50%;
+  background-color: transparent;
+  margin: 0px;
+  padding: 0px; }
+
+.set1 {
+  top: 40%; }
+
+.set2 {
+  top: 60%; }
+
+.hovereffect p {
+  width: 30%;
+  text-transform: none;
+  font-size: 15px;
+  line-height: 2; }
+
+.hovereffect p a {
+  color: #fff; }
+
+.hovereffect p a:hover,
+.hovereffect p a:focus {
+  opacity: 0.6;
+  filter: alpha(opacity=60); }
+
+.hovereffect a svg {
+  opacity: 0;
+  filter: alpha(opacity=0);
+  -webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
+  transition: opacity 0.35s, transform 0.35s;
+  padding: 10px;
+  font-size: 20px; }
+
+.set1 a:first-child svg {
+  -webkit-transform: translate3d(-60px, -60px, 0);
+  transform: translate3d(-60px, -60px, 0); }
+
+.set1 a:nth-child(2) svg {
+  -webkit-transform: translate3d(60px, -60px, 0);
+  transform: translate3d(60px, -60px, 0); }
+
+.set2 a:first-child svg {
+  -webkit-transform: translate3d(-60px, 60px, 0);
+  transform: translate3d(-60px, 60px, 0); }
+
+.set2 a:nth-child(2) svg {
+  -webkit-transform: translate3d(60px, 60px, 0);
+  transform: translate3d(60px, 60px, 0); }
+
+.hovereffect:hover hr:nth-child(3) {
+  opacity: 1;
+  filter: alpha(opacity=100);
+  -webkit-transform: translate3d(-50%, -50%, 0) rotate3d(0, 0, 1, -90deg) scale3d(1, 1, 1);
+  transform: translate3d(-50%, -50%, 0) rotate3d(0, 0, 1, -90deg) scale3d(1, 1, 1); }
+
+.hovereffect:hover hr:nth-child(4) {
+  opacity: 1;
+  filter: alpha(opacity=100);
+  -webkit-transform: translate3d(-50%, -50%, 0) rotate3d(0, 0, 1, -180deg) scale3d(1, 1, 1);
+  transform: translate3d(-50%, -50%, 0) rotate3d(0, 0, 1, -180deg) scale3d(1, 1, 1); }
+
+.hovereffect:hover .set1 svg:empty, .hovereffect:hover .set2 svg:empty {
+  -webkit-transform: translate3d(0, 0, 0);
+  transform: translate3d(0, 0, 0);
+  opacity: 1;
+  filter: alpha(opacity=100); }
 
 /*!
  * Bootstrap v4.1.3 (https://getbootstrap.com/)
@@ -6258,7 +6418,7 @@ a.text-dark:hover, a.text-dark:focus {
 .text-body {
   color: #212529 !important; }
 
-.text-muted {
+.text-muted, .fullheight::after {
   color: #6c757d !important; }
 
 .text-black-50 {
@@ -6341,7 +6501,7 @@ a.text-dark:hover, a.text-dark:focus {
 .Header {
   width: 100%; }
   .Header .navbar.navbar-dark {
-    background-color: rgba(34, 34, 34, 0.7) !important;
+    background-color: rgba(34, 34, 34, 0.3) !important;
     width: 100%;
     margin: 0;
     padding: 0 !important; }
@@ -6357,7 +6517,7 @@ a.text-dark:hover, a.text-dark:focus {
         -moz-box-shadow: 0px 3px 6px 1px #222222;
         box-shadow: 0px 3px 6px 1px #222222; }
     .Header .navbar.navbar-dark div#responsive-navbar-nav ul.navbar-nav a.nav-link.active {
-      border-color: snow; }
+      border-color: #222222; }
     .Header .navbar.navbar-dark div#responsive-navbar-nav ul.navbar-nav a.nav-link {
       display: block;
       color: antiquewhite;
@@ -6366,10 +6526,12 @@ a.text-dark:hover, a.text-dark:focus {
       letter-spacing: 3px;
       border-top: 5px solid transparent; }
       .Header .navbar.navbar-dark div#responsive-navbar-nav ul.navbar-nav a.nav-link:hover {
-        border-color: snow; }
+        border-color: antiquewhite; }
 
 .scrolled .navbar.navbar-dark {
   background-color: #222222 !important; }
+  .scrolled .navbar.navbar-dark #responsive-navbar-nav ul.navbar-nav a.nav-link.active {
+    border-color: antiquewhite !important; }
 
 .scrolled .navbar-brand img {
   max-height: 67px !important;
@@ -6398,94 +6560,3 @@ a.text-dark:hover, a.text-dark:focus {
           font-size: 5vw; }
         .footer ul.nav li a:hover svg {
           color: #222222; }
-
-section.services-front-section {
-  width: 100%;
-  height: 100%; }
-  section.services-front-section ul {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    list-style: none;
-    padding: 0;
-    margin: 0;
-    height: 100%;
-    height: 300px;
-    background: #093028;
-    /* fallback for old browsers */
-    background: -webkit-linear-gradient(to bottom, #237A57, #093028);
-    /* Chrome 10-25, Safari 5.1-6 */
-    background: linear-gradient(to bottom, #237A57, #093028);
-    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-    clip-path: polygon(0 0, 100% 0, 100% 100%, 0 calc(100% - 5vw)); }
-    section.services-front-section ul li {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      justify-content: center;
-      height: 100%;
-      width: 100%;
-      text-align: center; }
-      section.services-front-section ul li h5,
-      section.services-front-section ul li svg {
-        color: snow; }
-      section.services-front-section ul li svg {
-        margin: 0;
-        display: block;
-        padding: 0.7em 0 0.5em 0;
-        font-size: 5vw;
-        height: 50%;
-        width: 100%; }
-      section.services-front-section ul li h5 {
-        display: block;
-        letter-spacing: 3px;
-        text-transform: uppercase;
-        font-size: 2vw;
-        height: 50%;
-        width: 100%;
-        padding: 0;
-        margin: 0; }
-
-#carousel-front .carousel-inner {
-  overflow: hidden;
-  align-items: center;
-  max-height: 630px; }
-  #carousel-front .carousel-inner carousel-item img {
-    height: 100%; }
-
-.about-front-article {
-  display: flex; }
-  .about-front-article .about-front-text {
-    padding: 1.5em 1em 0 1em;
-    letter-spacing: 2.3px;
-    width: 50%;
-    font-size: 2.3vw;
-    color: Teal;
-    font-style: italic; }
-  .about-front-article span.about-front-img {
-    width: 50%;
-    min-height: 100%;
-    display: block;
-    background-image: url("https://www.sitprevencio.cat/wp-content/uploads/2018/04/construccion.jpg");
-    background-repeat: no-repeat;
-    background-position: center center;
-    background-size: 90% 65%; }
-
-.about-front-btn {
-  display: block;
-  margin: 0 auto;
-  position: relative;
-  border: 0;
-  border-top: 5px;
-  border-style: solid;
-  border-color: white;
-  font-size: 2.5em;
-  background-color: cadetblue;
-  padding: 15px 17px;
-  z-index: 99999; }
-  .about-front-btn a {
-    color: snow;
-    text-decoration: none; }
-  .about-front-btn:hover {
-    background-color: Teal;
-    border-color: rgba(34, 34, 34, 0.7); }

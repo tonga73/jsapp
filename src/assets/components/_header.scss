@@ -1,7 +1,7 @@
 .Header {
     width: 100%;
     .navbar.navbar-dark {
-        background-color: rgba(34, 34, 34, 0.7) !important;
+        background-color: rgba(34, 34, 34, 0.3) !important;
         width: 100%;
         margin: 0;
         padding: 0 !important;
@@ -21,7 +21,7 @@
         div#responsive-navbar-nav {
             ul.navbar-nav {
                 a.nav-link.active {
-                    border-color: snow;
+                    border-color: rgba(34, 34, 34, 1);
                 }
                 a.nav-link {
                     display: block;
@@ -31,7 +31,7 @@
                     letter-spacing: 3px;
                     border-top: 5px solid transparent;
                     &:hover {
-                        border-color: snow;
+                        border-color: antiquewhite;
                     }
                 }
             }
@@ -41,6 +41,13 @@
 .scrolled {
     .navbar.navbar-dark {
         background-color: rgba(34, 34, 34, 1) !important;
+        #responsive-navbar-nav {
+            ul.navbar-nav {
+                a.nav-link.active {
+                    border-color: antiquewhite !important;
+                }
+            }
+        }
     }
     .navbar-brand {
         img {

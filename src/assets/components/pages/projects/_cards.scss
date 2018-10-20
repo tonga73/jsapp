@@ -1,0 +1,103 @@
+#projectspage {
+    width: 100%;
+    .card-columns {
+        .card {
+            button {
+                display: none;
+                justify-content: center;
+                width: 30%;
+                height: 47px;
+                top: 20%;
+                right: 3%;
+                font-weight: bold;
+                letter-spacing: 5px;
+                background-color: transparent;
+                border-color: snow;
+                color: rgba($color: snow, $alpha: 0.5);
+                border-width: 1.7px;
+                position: absolute;
+                content: "" !important;
+                z-index: 3331;
+                &:hover {
+                    background-color: snow;
+                    color: rgba(34, 34, 34, 1);
+                }
+            }
+            #social-nav {
+                transition: 0s background-color;
+                display: none;
+                flex-direction: column;
+                justify-content: flex-end;
+                width: 100%;
+                height: 100%;
+                bottom: 0%;
+                position: absolute;
+                ul {
+                    li:last-child {
+                        display: none;
+                    }
+                    li {
+                        width: 33.33%;
+                        text-align: center;
+                        a {
+                            width: 100%;
+                            color: white;
+                            font-size: 1.7em;
+                            display: inline-block;
+                            visibility: hidden;
+                            &:hover {
+                                background-color: snow;
+                                color: rgba(34, 34, 34, 1);
+                            }
+                        }
+                    }
+                    &::after {
+                        content: 'COMPARTIR';
+                        display: flex;
+                        justify-content: center;
+                        background-color: snow;
+                        color: rgba(34, 34, 34, 0.7);
+                        margin: 0;
+                        align-items: center;
+                        height: 37px;
+                        font-weight: bold;
+                        letter-spacing: 5px;
+                        width: 100%;
+                        bottom: 0;
+                        position: absolute;
+                    }
+                    &:hover {
+                        &::after {
+                            display: none;
+                        }
+                        li {
+                            a {
+                                visibility: initial;
+                            }
+                        }
+                    }
+                }
+            }
+            &:hover {
+                button {
+                    display: flex;
+                }
+                #social-nav {
+                    display: flex;
+                    background-color: rgba(34, 34, 34, 0.5);
+                    transition-delay: 3s;
+                }
+            }
+        }
+        -webkit-column-count: 1;
+        -moz-column-count: 1;
+        column-count: 1;
+    }
+}
+@media (min-width: 1024px) {
+    .card-columns {
+        -webkit-column-count: 1 !important;
+        -moz-column-count: 1 !important;
+        column-count: 1 !important;
+    }
+}

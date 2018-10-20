@@ -8,21 +8,24 @@ import Contact from './Pages/Contact';
 
 export default class Content extends Component {
   render() {
+    const NoMatch = ({ location }) => (
+        <div id="page404">
+          <div className="container">
+            <h1 className="display-1">PÁGINA INEXISTENTE</h1>
+            <h3>Sin coincidencias para <code>{location.pathname}</code></h3>
+          </div>
+        </div>
+      )
     return (
-        <Switch>
-            <Route exact path="/" render={
-                () => {
-                return (
-                    <div>
-                    <FrontPage />
-                    </div>
-                )
-                }
-            } />
-            <Route path="/pages/projects" render={ () => { return <Projects /> } } />
-            <Route path="/pages/blog" render={ () => { return <Blog /> } } />
-            <Route path="/pages/contact" render={ () => { return <Contact /> } } />
-        </Switch>
+        <div className="d-flex justify-content-center">
+            <Switch>
+                <Route exact path="/" component={FrontPage} />
+                <Route path="/pages/projects" component={Projects} />
+                <Route path="/pages/blog" component={Blog} />
+                <Route path="/pages/contact" component={Contact} />
+                <Route component={NoMatch} />
+            </Switch>
+        </div>
     )
   }
 }

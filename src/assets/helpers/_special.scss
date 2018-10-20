@@ -1,7 +1,16 @@
 .fullheight::before {
     color: silver;
     font-size: 3vw;
-    content: "Sitio en construcción";
+    content: "\f126";
+    font-family: FontAwesome;
+    font-style: normal;
+    font-weight: normal;
+    text-decoration: inherit;
+}
+.fullheight::after {
+    @extend .text-muted;
+    
+    content: '| sección actualmente bajo desarrollo o mantenimiento |'
 }
 .fullheight {
     display: flex;

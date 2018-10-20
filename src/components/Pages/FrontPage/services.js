@@ -8,8 +8,7 @@ library.add(faClipboardCheck, faArchway, faCertificate, faBuilding, faLightbulb)
 export default class FrontServices extends Component {
   render() {
     return (
-      <div>
-        <section className="services-front-section">
+      <section className="services-front-section">
         <ul>
             <li>
                 <FontAwesomeIcon icon="clipboard-check" />
@@ -42,8 +41,7 @@ export default class FrontServices extends Component {
             </h5>
             </li>
         </ul>
-        </section>
-      </div>
+      </section>
     )
   }
 }
