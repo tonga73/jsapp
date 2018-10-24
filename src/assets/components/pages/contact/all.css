@@ -108,7 +108,7 @@
   align-items: center;
   padding: 10em 0;
   background-image: url("https://naturanda.com/es/wp-content/uploads/2016/08/lalhambra-monument-typique-islamique-espagne-e1518004730637.jpg");
-  background-position-y: -100%;
+  background-position-y: baseline;
   background-position-x: center;
   background-repeat: no-repeat;
   min-height: 470px !important;
