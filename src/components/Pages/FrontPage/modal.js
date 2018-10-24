@@ -20,8 +20,8 @@ export default class Example extends React.Component {
   
     render() {
       return (
-        <>
-          <Button className="about-front-btn" variant="primary" onClick={this.handleShow}>
+        <div id="modal-front">
+          <Button className="about-front-btn" onClick={this.handleShow}>
             CONOCÉ MÁS
           </Button>
   
@@ -50,7 +50,7 @@ export default class Example extends React.Component {
               </Carousel>
             </Modal.Body>
           </Modal>
-        </>
+        </div>
       );
     }
   }

@@ -118,7 +118,7 @@ section.services-front-section {
       padding: 0;
       background-size: contain; } }
 
-.about-front-btn {
+#modal-front .about-front-btn {
   display: block;
   margin: 0 auto;
   position: relative;
@@ -130,9 +130,9 @@ section.services-front-section {
   background-color: cadetblue;
   padding: 15px 17px;
   z-index: 2; }
-  .about-front-btn a {
+  #modal-front .about-front-btn a {
     color: snow;
     text-decoration: none; }
-  .about-front-btn:hover {
+  #modal-front .about-front-btn:hover {
     background-color: Teal;
     border-color: rgba(34, 34, 34, 0.7); }
