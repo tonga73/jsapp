@@ -6,15 +6,15 @@
 
 // My Bootstrap configuration (Custom Bootstrap Variables, Custom Fonts)
 @import './helpers/_custom_bootstrap';
-@import './helpers/special';
-@import './helpers/hover';
+@import './helpers/special.scss';
+@import './helpers/hover.scss';
 
 // Bootstrap library
 @import 'bootstrap/scss/bootstrap.scss';
 
 // Custom General Components
-@import './components/header';
-@import './components/footer';
+@import './components/header.scss';
+@import './components/footer.scss';
 
 // Custom Pages Folder
 @import './components/pages/all.scss'
