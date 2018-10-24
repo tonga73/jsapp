@@ -44,6 +44,21 @@ section.services-front-section {
         padding: 0;
         margin: 0; }
 
+@media (max-width: 768px) {
+  section.services-front-section ul {
+    width: 100%;
+    height: 100%;
+    padding: 0 0 5em 0;
+    flex-direction: column; }
+    section.services-front-section ul li {
+      display: block;
+      padding: 0.3em 0; }
+      section.services-front-section ul li svg {
+        font-size: 5em;
+        margin: 0 auto; }
+      section.services-front-section ul li h5 {
+        font-size: 2em; } }
+
 #carousel-front .carousel-indicators {
   bottom: -7px; }
 
@@ -64,6 +79,10 @@ section.services-front-section {
     #carousel-front .carousel-inner .carousel-item .carousel-caption h3 {
       margin: 0; }
 
+@media (min-width: 1024px) {
+  #carousel-front .carousel-inner .carousel-item {
+    max-height: 630px; } }
+
 .about-front-article {
   display: flex; }
   .about-front-article .about-front-text {
@@ -82,6 +101,23 @@ section.services-front-section {
     background-position: center center;
     background-size: 90% 65%; }
 
+@media (max-width: 768px) {
+  .about-front-article {
+    flex-direction: column; }
+    .about-front-article .about-front-text {
+      padding: 1em;
+      letter-spacing: 2.3px;
+      width: 100%;
+      max-height: 100%;
+      font-size: 5.3vw;
+      color: Teal;
+      font-style: italic; }
+    .about-front-article span.about-front-img {
+      width: 100%;
+      min-height: 30vw;
+      padding: 0;
+      background-size: contain; } }
+
 .about-front-btn {
   display: block;
   margin: 0 auto;
@@ -93,7 +129,7 @@ section.services-front-section {
   font-size: 2.5em;
   background-color: cadetblue;
   padding: 15px 17px;
-  z-index: 99999; }
+  z-index: 2; }
   .about-front-btn a {
     color: snow;
     text-decoration: none; }

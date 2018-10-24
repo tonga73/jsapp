@@ -17,7 +17,7 @@ export default class Content extends Component {
         </div>
       )
     return (
-        <div className="d-flex justify-content-center">
+        <div>
             <Switch>
                 <Route exact path="/" component={FrontPage} />
                 <Route path="/pages/projects" component={Projects} />

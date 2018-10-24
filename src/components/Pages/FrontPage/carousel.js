@@ -13,7 +13,7 @@ export default class FrontSlides extends Component {
                 alt="First slide"
                 />
                 <Carousel.Caption>
-                <h3>First slide label</h3>
+                <h3>EXTERIOR - Parrilla</h3>
                 </Carousel.Caption>
             </Carousel.Item>
             <Carousel.Item>
@@ -24,7 +24,7 @@ export default class FrontSlides extends Component {
                 />
 
                 <Carousel.Caption>
-                <h3>Second slide label</h3>
+                <h3>CORTE - Plazoleta</h3>
                 </Carousel.Caption>
             </Carousel.Item>
             <Carousel.Item>
@@ -35,7 +35,7 @@ export default class FrontSlides extends Component {
                 />
 
                 <Carousel.Caption>
-                <h3>Third slide label</h3>
+                <h3>INTERIOR - Escritorio con biblioteca</h3>
                 </Carousel.Caption>
             </Carousel.Item>
             <Carousel.Item>
@@ -46,7 +46,7 @@ export default class FrontSlides extends Component {
                 />
 
                 <Carousel.Caption>
-                <h3>Third slide label</h3>
+                <h3>INTERIOR - Cocina / Escalera Duplex</h3>
                 </Carousel.Caption>
             </Carousel.Item>
             <Carousel.Item>
@@ -57,7 +57,7 @@ export default class FrontSlides extends Component {
                 />
 
                 <Carousel.Caption>
-                <h3>Third slide label</h3>
+                <h3>INTERIOR - Living / Cocina</h3>
                 </Carousel.Caption>
             </Carousel.Item>
             <Carousel.Item>
@@ -68,7 +68,7 @@ export default class FrontSlides extends Component {
                 />
 
                 <Carousel.Caption>
-                <h3>Third slide label</h3>
+                <h3>EXTERIOR - Quincho en dos niveles con parrilla</h3>
                 </Carousel.Caption>
             </Carousel.Item>
         </Carousel>

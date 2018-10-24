@@ -1,0 +1,78 @@
+#contact {
+    _:-ms-lang(x), _::-webkit-meter-bar, .jumbotron { background-position-y: 0% !important; }
+    .jumbotron {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 10em 0;
+        background-image: url('https://naturanda.com/es/wp-content/uploads/2016/08/lalhambra-monument-typique-islamique-espagne-e1518004730637.jpg');
+        background-position-y: -100%;
+        background-position-x: center;
+        background-repeat: no-repeat;
+        min-height: 470px !important;
+        background-attachment: fixed;
+        background-size: cover;
+        h1 {
+            display: flex;
+            justify-content: center;
+            flex-direction: column;
+            align-items: flex-end;
+            width: 90%;
+            background-color: rgba($color: antiquewhite, $alpha: 0.5);
+            padding: 3em 1em;
+            letter-spacing: 3px;
+            font-weight: bold;
+            #social-nav {
+                ul {
+                    border-top: 3px solid #222222;
+                    li:last-child {
+                        display: none;
+                    }
+                    li {
+                        a {
+                            color: rgba($color: #222222, $alpha: 0.8);
+                            &:hover {
+                                background-color: #222;
+                                color: antiquewhite;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }    
+}
+@media (max-width: 768px) {
+    #contact {
+        .jumbotron {
+            padding: 0;
+            align-items: center;
+            background-image: url('https://naturanda.com/es/wp-content/uploads/2016/08/lalhambra-monument-typique-islamique-espagne-e1518004730637.jpg');
+            background-position-y: -100%;
+            min-height: 600px;
+            background-attachment: fixed;
+            background-size: cover;
+            h1 {
+                display: flex;
+                flex-direction: column;
+                background-color: rgba($color: antiquewhite, $alpha: 0.5);
+                padding: 0;
+                letter-spacing: 3px;
+                font-weight: bold;
+                #social-nav {
+                    ul {
+                        li:last-child {
+                            display: none;
+                        }
+                        li {
+                            a {
+                                color: rgb(34, 34, 34);
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

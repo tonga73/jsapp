@@ -1,0 +1,156 @@
+@media (min-width: 0) {
+  .card-deck .card {
+    flex: 0 0 calc(100% - 30px); } }
+
+@media (min-width: 576px) {
+  .card-deck .card {
+    flex: 0 0 calc(100% - 30px); } }
+
+@media (min-width: 768px) {
+  .card-deck .card {
+    flex: 0 0 calc(100% - 30px); } }
+
+@media (min-width: 992px) {
+  .card-deck .card {
+    flex: 0 0 calc(33.33333% - 30px); } }
+
+@media (min-width: 1200px) {
+  .card-deck .card {
+    flex: 0 0 calc(33.33333% - 30px); } }
+
+#contact .card-deck .card {
+  border-width: 3px; }
+  #contact .card-deck .card .card-header {
+    background-color: transparent;
+    text-align: right;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    opacity: 0.7; }
+  #contact .card-deck .card .card-body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 0 1em;
+    text-align: right; }
+    #contact .card-deck .card .card-body .list-group .list-group-item {
+      background-color: transparent;
+      font-size: 1.7vw;
+      letter-spacing: 1px;
+      font-weight: bold;
+      margin: 0; }
+    #contact .card-deck .card .card-body p.card-text {
+      font-size: 1.5vw;
+      margin: 0;
+      font-weight: bold; }
+
+@media (max-width: 992px) {
+  #contact .card-deck .card {
+    margin: 1em 0; }
+    #contact .card-deck .card .card-header {
+      background-color: transparent;
+      text-align: right;
+      letter-spacing: 3px;
+      text-transform: uppercase;
+      opacity: 0.7; }
+    #contact .card-deck .card .card-body {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      padding: 3em;
+      text-align: right; }
+      #contact .card-deck .card .card-body .list-group .list-group-item {
+        background-color: transparent;
+        letter-spacing: 1px;
+        font-weight: bold;
+        margin: 0; }
+      #contact .card-deck .card .card-body p.card-text {
+        font-size: 3.7vw;
+        margin: 0;
+        font-weight: bold; } }
+
+@media (max-width: 576px) {
+  #contact .card-deck {
+    display: flex;
+    align-items: center;
+    justify-content: center; }
+    #contact .card-deck .card {
+      border-width: 3px; }
+      #contact .card-deck .card .card-header {
+        background-color: transparent;
+        text-align: right;
+        letter-spacing: 3px;
+        text-transform: uppercase;
+        opacity: 0.7; }
+      #contact .card-deck .card .card-body {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        padding: 3em;
+        text-align: right; }
+        #contact .card-deck .card .card-body .list-group .list-group-item {
+          background-color: transparent;
+          font-size: 3.7vw;
+          letter-spacing: 1px;
+          font-weight: bold;
+          margin: 0; }
+        #contact .card-deck .card .card-body p.card-text {
+          font-size: 3.5vw;
+          margin: 0;
+          font-weight: bold; } }
+
+#contact _:-ms-lang(x), #contact _::-webkit-meter-bar, #contact .jumbotron {
+  background-position-y: 0% !important; }
+
+#contact .jumbotron {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 10em 0;
+  background-image: url("https://naturanda.com/es/wp-content/uploads/2016/08/lalhambra-monument-typique-islamique-espagne-e1518004730637.jpg");
+  background-position-y: -100%;
+  background-position-x: center;
+  background-repeat: no-repeat;
+  min-height: 470px !important;
+  background-attachment: fixed;
+  background-size: cover; }
+  #contact .jumbotron h1 {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: flex-end;
+    width: 90%;
+    background-color: rgba(250, 235, 215, 0.5);
+    padding: 3em 1em;
+    letter-spacing: 3px;
+    font-weight: bold; }
+    #contact .jumbotron h1 #social-nav ul {
+      border-top: 3px solid #222222; }
+      #contact .jumbotron h1 #social-nav ul li:last-child {
+        display: none; }
+      #contact .jumbotron h1 #social-nav ul li a {
+        color: rgba(34, 34, 34, 0.8); }
+        #contact .jumbotron h1 #social-nav ul li a:hover {
+          background-color: #222;
+          color: antiquewhite; }
+
+@media (max-width: 768px) {
+  #contact .jumbotron {
+    padding: 0;
+    align-items: center;
+    background-image: url("https://naturanda.com/es/wp-content/uploads/2016/08/lalhambra-monument-typique-islamique-espagne-e1518004730637.jpg");
+    background-position-y: -100%;
+    min-height: 600px;
+    background-attachment: fixed;
+    background-size: cover; }
+    #contact .jumbotron h1 {
+      display: flex;
+      flex-direction: column;
+      background-color: rgba(250, 235, 215, 0.5);
+      padding: 0;
+      letter-spacing: 3px;
+      font-weight: bold; }
+      #contact .jumbotron h1 #social-nav ul li:last-child {
+        display: none; }
+      #contact .jumbotron h1 #social-nav ul li a {
+        color: #222222; } }

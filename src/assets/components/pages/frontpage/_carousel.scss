@@ -25,3 +25,12 @@
         }
     }
 }
+@media (min-width: 1024px) {
+    #carousel-front {
+        .carousel-inner {
+            .carousel-item {
+                max-height: 630px;
+            }
+        }
+    }
+}

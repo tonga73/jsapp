@@ -3,6 +3,7 @@
 ****/
 @import url(./frontpage/all.css);
 @import url(./projects/all.css);
+@import url(./contact/all.css);
 #page404 {
   background-image: url("https://d2v9y0dukr6mq2.cloudfront.net/video/thumbnail/H7hZPWKVeix02q3kz/videoblocks-big-excavator-is-digging-foundations-of-house-excavating-of-hole-construction-machinery-ground-works-yellow-digger-works-on-building-static-day-stabilized-v-log-shot-bucket-digs-in-clay_rv6me5akz_thumbnail-full02.png");
   display: flex;
