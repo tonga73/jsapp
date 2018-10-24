@@ -1,9 +1,6 @@
 /****
 ***** Pages Components
 ****/
-@import url(./frontpage/all.css);
-@import url(./projects/all.css);
-@import url(./contact/all.css);
 #page404 {
   background-image: url("https://d2v9y0dukr6mq2.cloudfront.net/video/thumbnail/H7hZPWKVeix02q3kz/videoblocks-big-excavator-is-digging-foundations-of-house-excavating-of-hole-construction-machinery-ground-works-yellow-digger-works-on-building-static-day-stabilized-v-log-shot-bucket-digs-in-clay_rv6me5akz_thumbnail-full02.png");
   display: flex;
@@ -28,3 +25,378 @@
       padding: 1em;
       border-radius: 50px;
       width: 70%; }
+
+section.services-front-section {
+  width: 100%; }
+  section.services-front-section ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    height: 100%;
+    height: 300px;
+    background: #093028;
+    /* fallback for old browsers */
+    background: -webkit-linear-gradient(to bottom, #237A57, #093028);
+    /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to bottom, #237A57, #093028);
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0 calc(100% - 5vw)); }
+    section.services-front-section ul li {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      height: 100%;
+      width: 100%;
+      text-align: center; }
+      section.services-front-section ul li h5,
+      section.services-front-section ul li svg {
+        color: snow; }
+      section.services-front-section ul li svg {
+        margin: 0;
+        display: block;
+        padding: 0.7em 0 0.5em 0;
+        font-size: 5vw;
+        height: 50%;
+        width: 100%; }
+      section.services-front-section ul li h5 {
+        display: block;
+        letter-spacing: 3px;
+        text-transform: uppercase;
+        font-size: 2vw;
+        height: 50%;
+        width: 100%;
+        padding: 0;
+        margin: 0; }
+
+@media (max-width: 768px) {
+  section.services-front-section ul {
+    width: 100%;
+    height: 100%;
+    padding: 0 0 5em 0;
+    flex-direction: column; }
+    section.services-front-section ul li {
+      display: block;
+      padding: 0.3em 0; }
+      section.services-front-section ul li svg {
+        font-size: 5em;
+        margin: 0 auto; }
+      section.services-front-section ul li h5 {
+        font-size: 2em; } }
+
+#carousel-front .carousel-indicators {
+  bottom: -7px; }
+
+#carousel-front .carousel-inner .carousel-item {
+  align-items: center;
+  max-height: 630px; }
+  #carousel-front .carousel-inner .carousel-item img {
+    height: 100%; }
+  #carousel-front .carousel-inner .carousel-item .carousel-caption {
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    padding: 1em 0;
+    bottom: 0;
+    left: 0;
+    background-color: #222222;
+    width: 100%; }
+    #carousel-front .carousel-inner .carousel-item .carousel-caption h3 {
+      margin: 0; }
+
+@media (min-width: 1024px) {
+  #carousel-front .carousel-inner .carousel-item {
+    max-height: 630px; } }
+
+.about-front-article {
+  display: flex; }
+  .about-front-article .about-front-text {
+    padding: 1.5em 1em 0 1em;
+    letter-spacing: 2.3px;
+    width: 50%;
+    font-size: 2.3vw;
+    color: Teal;
+    font-style: italic; }
+  .about-front-article span.about-front-img {
+    width: 50%;
+    min-height: 100%;
+    display: block;
+    background-image: url("https://www.sitprevencio.cat/wp-content/uploads/2018/04/construccion.jpg");
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: 90% 65%; }
+
+@media (max-width: 768px) {
+  .about-front-article {
+    flex-direction: column; }
+    .about-front-article .about-front-text {
+      padding: 1em;
+      letter-spacing: 2.3px;
+      width: 100%;
+      max-height: 100%;
+      font-size: 5.3vw;
+      color: Teal;
+      font-style: italic; }
+    .about-front-article span.about-front-img {
+      width: 100%;
+      min-height: 30vw;
+      padding: 0;
+      background-size: contain; } }
+
+#modal-front .about-front-btn {
+  display: block;
+  margin: 0 auto;
+  position: relative;
+  border: 0;
+  border-top: 5px;
+  border-style: solid;
+  border-color: white;
+  font-size: 2.5em;
+  background-color: cadetblue;
+  padding: 15px 17px;
+  z-index: 2; }
+  #modal-front .about-front-btn a {
+    color: snow;
+    text-decoration: none; }
+  #modal-front .about-front-btn:hover {
+    background-color: Teal;
+    border-color: rgba(34, 34, 34, 0.7); }
+
+#projectspage {
+  width: 100%; }
+  #projectspage .card-columns {
+    -webkit-column-count: 1;
+    -moz-column-count: 1;
+    column-count: 1; }
+    #projectspage .card-columns .card button {
+      display: none;
+      justify-content: center;
+      width: 30%;
+      height: 47px;
+      top: 20%;
+      right: 3%;
+      font-weight: bold;
+      letter-spacing: 5px;
+      background-color: transparent;
+      border-color: snow;
+      color: rgba(255, 250, 250, 0.5);
+      border-width: 1.7px;
+      position: absolute;
+      content: "" !important;
+      z-index: 3331; }
+      #projectspage .card-columns .card button:hover {
+        background-color: snow;
+        color: #222222; }
+    #projectspage .card-columns .card #social-nav {
+      transition: 0s background-color;
+      display: none;
+      flex-direction: column;
+      justify-content: flex-end;
+      width: 100%;
+      height: 100%;
+      bottom: 0%;
+      position: absolute; }
+      #projectspage .card-columns .card #social-nav ul li:last-child {
+        display: none; }
+      #projectspage .card-columns .card #social-nav ul li {
+        width: 33.33%;
+        text-align: center; }
+        #projectspage .card-columns .card #social-nav ul li a {
+          width: 100%;
+          color: white;
+          font-size: 1.7em;
+          display: inline-block;
+          visibility: hidden; }
+          #projectspage .card-columns .card #social-nav ul li a:hover {
+            background-color: snow;
+            color: #222222; }
+      #projectspage .card-columns .card #social-nav ul::after {
+        content: 'COMPARTIR';
+        display: flex;
+        justify-content: center;
+        background-color: snow;
+        color: rgba(34, 34, 34, 0.7);
+        margin: 0;
+        align-items: center;
+        height: 37px;
+        font-weight: bold;
+        letter-spacing: 5px;
+        width: 100%;
+        bottom: 0;
+        position: absolute; }
+      #projectspage .card-columns .card #social-nav ul:hover::after {
+        display: none; }
+      #projectspage .card-columns .card #social-nav ul:hover li a {
+        visibility: initial; }
+    #projectspage .card-columns .card:hover button {
+      display: flex; }
+    #projectspage .card-columns .card:hover #social-nav {
+      display: flex;
+      background-color: rgba(34, 34, 34, 0.5);
+      transition-delay: 3s; }
+
+@media (min-width: 1024px) {
+  .card-columns {
+    -webkit-column-count: 2 !important;
+    -moz-column-count: 2 !important;
+    column-count: 2 !important; } }
+
+@media (min-width: 0) {
+  .card-deck .card {
+    flex: 0 0 calc(100% - 30px); } }
+
+@media (min-width: 576px) {
+  .card-deck .card {
+    flex: 0 0 calc(100% - 30px); } }
+
+@media (min-width: 768px) {
+  .card-deck .card {
+    flex: 0 0 calc(100% - 30px); } }
+
+@media (min-width: 992px) {
+  .card-deck .card {
+    flex: 0 0 calc(33.33333% - 30px); } }
+
+@media (min-width: 1200px) {
+  .card-deck .card {
+    flex: 0 0 calc(33.33333% - 30px); } }
+
+#contact .card-deck .card {
+  border-width: 3px; }
+  #contact .card-deck .card .card-header {
+    background-color: transparent;
+    text-align: right;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    opacity: 0.7; }
+  #contact .card-deck .card .card-body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 0 1em;
+    text-align: right; }
+    #contact .card-deck .card .card-body .list-group .list-group-item {
+      background-color: transparent;
+      font-size: 1.7vw;
+      letter-spacing: 1px;
+      font-weight: bold;
+      margin: 0; }
+    #contact .card-deck .card .card-body p.card-text {
+      font-size: 1.5vw;
+      margin: 0;
+      font-weight: bold; }
+
+@media (max-width: 992px) {
+  #contact .card-deck .card {
+    margin: 1em 0; }
+    #contact .card-deck .card .card-header {
+      background-color: transparent;
+      text-align: right;
+      letter-spacing: 3px;
+      text-transform: uppercase;
+      opacity: 0.7; }
+    #contact .card-deck .card .card-body {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      padding: 3em;
+      text-align: right; }
+      #contact .card-deck .card .card-body .list-group .list-group-item {
+        background-color: transparent;
+        letter-spacing: 1px;
+        font-weight: bold;
+        margin: 0; }
+      #contact .card-deck .card .card-body p.card-text {
+        font-size: 3.7vw;
+        margin: 0;
+        font-weight: bold; } }
+
+@media (max-width: 576px) {
+  #contact .card-deck {
+    display: flex;
+    align-items: center;
+    justify-content: center; }
+    #contact .card-deck .card {
+      border-width: 3px; }
+      #contact .card-deck .card .card-header {
+        background-color: transparent;
+        text-align: right;
+        letter-spacing: 3px;
+        text-transform: uppercase;
+        opacity: 0.7; }
+      #contact .card-deck .card .card-body {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        padding: 3em;
+        text-align: right; }
+        #contact .card-deck .card .card-body .list-group .list-group-item {
+          background-color: transparent;
+          font-size: 3.7vw;
+          letter-spacing: 1px;
+          font-weight: bold;
+          margin: 0; }
+        #contact .card-deck .card .card-body p.card-text {
+          font-size: 3.5vw;
+          margin: 0;
+          font-weight: bold; } }
+
+#contact _:-ms-lang(x), #contact _::-webkit-meter-bar, #contact .jumbotron {
+  background-position-y: 0% !important; }
+
+#contact .jumbotron {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 10em 0;
+  background-image: url("https://naturanda.com/es/wp-content/uploads/2016/08/lalhambra-monument-typique-islamique-espagne-e1518004730637.jpg");
+  background-position-y: baseline;
+  background-position-x: center;
+  background-repeat: no-repeat;
+  min-height: 470px !important;
+  background-attachment: fixed;
+  background-size: cover; }
+  #contact .jumbotron h1 {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: flex-end;
+    width: 90%;
+    background-color: rgba(250, 235, 215, 0.5);
+    padding: 3em 1em;
+    letter-spacing: 3px;
+    font-weight: bold; }
+    #contact .jumbotron h1 #social-nav ul {
+      border-top: 3px solid #222222; }
+      #contact .jumbotron h1 #social-nav ul li:last-child {
+        display: none; }
+      #contact .jumbotron h1 #social-nav ul li a {
+        color: rgba(34, 34, 34, 0.8); }
+        #contact .jumbotron h1 #social-nav ul li a:hover {
+          background-color: #222;
+          color: antiquewhite; }
+
+@media (max-width: 768px) {
+  #contact .jumbotron {
+    padding: 0;
+    align-items: center;
+    background-image: url("https://naturanda.com/es/wp-content/uploads/2016/08/lalhambra-monument-typique-islamique-espagne-e1518004730637.jpg");
+    background-position-y: -100%;
+    min-height: 600px;
+    background-attachment: fixed;
+    background-size: cover; }
+    #contact .jumbotron h1 {
+      display: flex;
+      flex-direction: column;
+      background-color: rgba(250, 235, 215, 0.5);
+      padding: 0;
+      letter-spacing: 3px;
+      font-weight: bold; }
+      #contact .jumbotron h1 #social-nav ul li:last-child {
+        display: none; }
+      #contact .jumbotron h1 #social-nav ul li a {
+        color: #222222; } }
